@@ -1,0 +1,40 @@
+{% extends "_layout.html" %}
+{% import "_forms.macro.html" as forms %}
+{% set __title = "Admin" %}
+{% block body %}
+<div class="container">
+    <h1>Admin</h1>
+    <div class="flex">
+        <div class="card col">
+            <div class="card__body">
+                <h3><a href="/admin/bootcamps">Bootcamps</a></h3>
+                <p class="tip">Manage bootcamps here</p>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="card__body">
+                <h3><a href="/admin/employers">Employers</a></h3>
+                <p class="tip">Manage employers here</p>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="card__body">
+                <h3><a href="/admin/candidates">Candidates</a></h3>
+                <p class="tip">Manage candidates here</p>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="card__body">
+                <h3><a href="/admin/pendingcandidates/">Pending Candidates</a></h3>
+                <p class="tip">Manage pending candidates here</p>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="card__body">
+                <h3><a href="/admin/approvedcandidates/">Approved Candidates</a></h3>
+                <p class="tip">Manage approved candidates here</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
